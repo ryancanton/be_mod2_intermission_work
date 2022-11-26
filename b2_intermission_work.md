@@ -80,20 +80,22 @@ the same attribute types.
 
 ### PG Exercises
 
-1. How can you limit which columns you select from a table?
-1. How can you limit which rows you select from a table?
-1. How can you give a selected column a different name in your output?
-1. How can you sort your output from a SQL statement?
-1. What is joining? When do you need to join?
-1. What is an aggregate function?
-1. List three aggregate functions and what they do.
-1. What does the `group` statement do?
-1. How does the `group` statement relate to aggregates?
+1. How can you limit which columns you select from a table? Specify which columns you want returned after keyword SELECT
+1. How can you limit which rows you select from a table? After WHERE, make a conditional statement that limits which rows are returned.
+1. How can you give a selected column a different name in your output? Use the AS keyword. Ex: cd.faculty.name AS 'Faculty Member'
+1. How can you sort your output from a SQL statement? Use the ORDER BY keywords; you can choose which row you want to organize by, in increasing or descending order.
+1. What is joining? When do you need to join? Joining is combining two or more tables that have an identical column. It can be used to view how data relates across tables.
+1. What is an aggregate function? An aggregate function combines data from a table to create values
+1. List three aggregate functions and what they do. COUNT-counts number of columns
+SUM-adds values of specified columns
+AVG-averages values of specified column
+1. What does the `group` statement do? The `group` keyword can be used to separate aggregate functions by a specified column
+1. How does the `group` statement relate to aggregates? See above.
 
 ## Rails Tutorial: Task Manager
 
 **Copy and Paste the link to your Task Manager repo here:**
-**Copy and Paste the link to your Static Challenge here:**
+**Copy and Paste the link to your Static Challenge here:** https://github.com/ryancanton/static_challenges
 
 1. Define CRUD.
 1. Define MVC.
