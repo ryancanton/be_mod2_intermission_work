@@ -94,11 +94,11 @@ AVG-averages values of specified column
 
 ## Rails Tutorial: Task Manager
 
-**Copy and Paste the link to your Task Manager repo here:**
+**Copy and Paste the link to your Task Manager repo here:** https://github.com/ryancanton/task_manager
 **Copy and Paste the link to your Static Challenge here:** https://github.com/ryancanton/static_challenges
 
-1. Define CRUD.
-1. Define MVC.
-1. What three files would you need to create/modify for a Rails application to respond to a `GET` request to `/tasks`, assuming you have a `Task` model.
-1. What are params? Where do they come from?
-1. Check out your routes. Why do we need two routes each for creating a new Task and editing an existing Task?
+1. Define CRUD. Create, read, update, delete: These are the four base operations of database management, and nearly every application should be able to do them.
+1. Define MVC. Model-view-controller is a way of thinking about how an application works. A user interacts with a controller, which changes the model of data, which updates the view for the user.
+1. What three files would you need to create/modify for a Rails application to respond to a `GET` request to `/tasks`, assuming you have a `Task` model. You would need to ensure there is a controller for the tasks that defines any methods used in the `GET` request; you will need an html(.erb) file that will update the view from the user, and you will need a route in your routes folder that says where specifically to go and what to do in /tasks.
+1. What are params? Where do they come from? Rails takes the parameters that are received from controller requests and turns it into a params object that can be manipulated inside of an application. These parameters can come from HTML forms, i.e. the user.
+1. Check out your routes. Why do we need two routes each for creating a new Task and editing an existing Task? We need two routes because they each have a unique HTML, and the edit and create methods do not do the same thing (edit first has to acquire the object from the db before updating it, while create starts from scratch).
